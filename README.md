@@ -20,6 +20,8 @@ La solución sigue una arquitectura **cliente/servicio**: un **back-end** mínim
 
 ## Estructura
 
+```
+.
 technical-challengue/
 ├─ server/           # back-end (Node/Express)
 │  ├─ server.js
@@ -29,6 +31,7 @@ technical-challengue/
 │  └─ app.js
 ├─ .gitignore
 └─ README.md
+```
 
 ---
 
