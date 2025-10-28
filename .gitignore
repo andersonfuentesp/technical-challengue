@@ -1,0 +1,27 @@
+# Node (back)
+server/node_modules/
+server/.env
+server/.env.*.local
+server/npm-debug.log*
+
+# Front (estático / bundlers)
+web/node_modules/
+web/dist/
+web/.vite/
+web/.parcel-cache
+
+# Logs
+*.log
+
+# Builds / coverage / cache
+dist/
+build/
+coverage/
+.cache/
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

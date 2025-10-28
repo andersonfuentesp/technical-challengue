@@ -1,0 +1,13 @@
+{
+  "name": "random-people-api",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random People</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto; margin:0; padding:24px; background:#0f172a; color:#e5e7eb}
+    header{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:16px}
+    input,select,button{padding:8px 10px; border-radius:8px; border:1px solid #334155; background:#111827; color:#e5e7eb}
+    button{cursor:pointer}
+    .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px}
+    .card{background:#111827; border:1px solid #1f2937; border-radius:14px; padding:14px}
+    .row{display:flex; gap:12px; align-items:center}
+    img{width:64px; height:64px; border-radius:50%; object-fit:cover}
+    small{color:#94a3b8}
+  </style>
+</head>
+<body>
+  <h1>Lista de Personas</h1>
+  <header>
+    <label>Cantidad <input type="number" id="count" value="10" min="1" max="50"></label>
+    <label>Género
+      <select id="gender">
+        <option value="">todos</option>
+        <option>male</option><option>female</option>
+      </select>
+    </label>
+    <label>Nacionalidades (csv ej: us,gb,es)
+      <input id="nat" placeholder="us,gb,es">
+    </label>
+    <button id="load">Generar</button>
+  </header>
+
+  <div id="meta"></div>
+  <section id="grid" class="grid"></section>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
