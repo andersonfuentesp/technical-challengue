@@ -21,14 +21,14 @@ La solución sigue una arquitectura **cliente/servicio**: un **back-end** mínim
 ## Estructura
 
 ```
-.
 technical-challengue/
-├─ server/           # back-end (Node/Express)
-│  ├─ server.js
-│  └─ package.json
-├─ web/              # front-end estático
-│  ├─ index.html
-│  └─ app.js
+├─ server/ # back-end (Node/Express)
+│ ├─ server.js
+│ └─ package.json
+├─ web/ # front-end estático
+│ ├─ index.html
+│ ├─ app.js
+│ └─ styles.css
 ├─ .gitignore
 └─ README.md
 ```
@@ -61,6 +61,7 @@ nat → lista CSV de nacionalidades (opcional), p.ej.: us,gb,es
 
 Ejemplo de respuesta (resumen)
 
+```
 {
   "users": [
     {
@@ -74,3 +75,4 @@ Ejemplo de respuesta (resumen)
   ],
   "meta": { "count": 10 }
 }
+```
